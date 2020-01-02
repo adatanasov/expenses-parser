@@ -16,13 +16,15 @@ namespace expenses_parser
             { "VITANIYA", Category.Health },
             { "METRO BALAN", Category.Transport },
             { "Revolut", Category.ToDelete },
-            { "Прогрес", Category.ToDelete }
+            { "Прогрес", Category.ToDelete },
+            { "ЗАХРАНВАНЕ", Category.CommonAccount },
+            { "Теглене на АТМ", Category.ToDelete },
         };
 
         private Dictionary<string, string> commonMap = new Dictionary<string, string>()
         {
-            { "Такса", Category.BankTax },
-            { "Т-са Плащ.", Category.BankTax },
+            { "Такса", Category.BankTaxBG },
+            { "Т-са Плащ.", Category.BankTaxBG },
             { "Анатолий", Category.RentBG },
             { "LIDL", Category.FoodBG },
             { "BILLA", Category.FoodBG },
@@ -35,7 +37,9 @@ namespace expenses_parser
             { "NETFLIX", Category.NetflixBG },
             { "Spotify", Category.SpotifyBG },
             { "Revolut", Category.ToDelete },
-            { "Период.плащ.", Category.ToDelete }
+            { "Период.плащ.", Category.ToDelete },
+            { "FANTASTICO", Category.FoodBG },
+            { "KINO ARENA", Category.FoodBG }
         };
 
         public CategoryChooser(Type type)

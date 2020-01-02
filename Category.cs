@@ -7,6 +7,7 @@ namespace expenses_parser
         public readonly static string BankTax = "Bank Tax";
         public readonly static string Health = "Health";
         public readonly static string Transport = "Transport";
+        public readonly static string CommonAccount = "Common account";
         public readonly static string BankTaxBG = "Банкови такси";
         public readonly static string RentBG = "Наем";
         public readonly static string FoodBG = "Храна";
@@ -15,5 +16,6 @@ namespace expenses_parser
         public readonly static string HomeItemsBG = "Домашни потреби";
         public readonly static string NetflixBG = "Нетфликс";
         public readonly static string SpotifyBG = "Спотифай";
+        public readonly static string CinemaBG = "Кино";
     }
 }
