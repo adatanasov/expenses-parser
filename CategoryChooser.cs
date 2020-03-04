@@ -11,8 +11,9 @@ namespace expenses_parser
         {
             { "EDIS BAKERY", Category.Food },
             { "EDDYS BAKE", Category.Food },
+            { "EDDY S BAKE", Category.Food },
             { "Такса", Category.BankTax },
-            { "ЙОРЯНА СПОРТ КОМПЪНИ ЕООД", Category.Health },
+            { "ЙОРЯНА СПОРТ КОМПЪНИ ЕООД", Category.Sport },
             { "VITANIYA", Category.Health },
             { "METRO BALAN", Category.Transport },
             { "Revolut", Category.ToDelete },
@@ -33,13 +34,30 @@ namespace expenses_parser
             { " OMV ", Category.GasBG },
             { "LADA GROUP", Category.GasBG },
             { "ZOO", Category.CatsBG },
+            { "ML.1 AKVADIZAYN", Category.CatsBG},
             { "#DM ", Category.HomeItemsBG },
             { "NETFLIX", Category.NetflixBG },
             { "Spotify", Category.SpotifyBG },
             { "Revolut", Category.ToDelete },
             { "Период.плащ.", Category.ToDelete },
+            { "Получен кредитен превод", Category.ToDelete},
             { "FANTASTICO", Category.FoodBG },
-            { "KINO ARENA", Category.FoodBG }
+            { "KINO ARENA", Category.FoodBG },
+            { "SITI STANDART", Category.FacilityBG },
+            { "TOPLOFIKATSIA SOFIA", Category.ToploBG},
+            { "KASHTATA NA DZHIKOV", Category.RestaurantBG},
+            { "RESTAURANT TOZI ONZI", Category.RestaurantBG},
+            { "KITCHEN SI", Category.RestaurantBG}
+        };
+
+        private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
+        {
+            { "Top-Up by *", Category.ToDelete },
+            { "Cash at ", Category.ToDelete },
+            { "3dpos Etapgroup.com", Category.HolidayBG },
+            { "ЙОРЯНА СПОРТ КОМПЪНИ ЕООД", Category.Sport },
+            { "Telenor", Category.Phone },
+            { "Patreon", Category.Entertainment }
         };
 
         public CategoryChooser(Type type)
@@ -68,6 +86,8 @@ namespace expenses_parser
                     return this.personalMap;
                 case Type.Common:
                     return this.commonMap;
+                case Type.Revolut:
+                    return this.revolutMap;
                 default: 
                     throw new ArgumentException("Invalid type for CategoryChooser.");
             }

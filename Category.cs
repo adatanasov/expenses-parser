@@ -6,8 +6,11 @@ namespace expenses_parser
         public readonly static string Food = "Food";
         public readonly static string BankTax = "Bank Tax";
         public readonly static string Health = "Health";
+        public readonly static string Sport = "Sport";
         public readonly static string Transport = "Transport";
         public readonly static string CommonAccount = "Common account";
+        public readonly static string Phone = "Phone";
+        public readonly static string Entertainment = "Entertainment";
         public readonly static string BankTaxBG = "Банкови такси";
         public readonly static string RentBG = "Наем";
         public readonly static string FoodBG = "Храна";
@@ -17,5 +20,9 @@ namespace expenses_parser
         public readonly static string NetflixBG = "Нетфликс";
         public readonly static string SpotifyBG = "Спотифай";
         public readonly static string CinemaBG = "Кино";
+        public readonly static string FacilityBG = "Вход";
+        public readonly static string ToploBG = "Топлофикация";
+        public readonly static string RestaurantBG = "Ресторант";
+        public readonly static string HolidayBG = "Почивка";
     }
 }
