@@ -20,7 +20,7 @@ namespace expenses_parser
             for (int i = 1; i < lines.Length; i++)
             {
                 string line = lines[i];
-                string[] columns = line.Split(";", StringSplitOptions.None);
+                string[] columns = line.Split(",", StringSplitOptions.None);
 
                 string date = columns[0].Replace("\"", string.Empty).Trim();
                 string category = columns[1].Replace("\"", string.Empty).Trim();
