@@ -16,10 +16,13 @@ namespace expenses_parser
             { "ЙОРЯНА СПОРТ КОМПЪНИ ЕООД", Category.Sport },
             { "VITANIYA", Category.Health },
             { "METRO BALAN", Category.Transport },
+            { "Balan", Category.Transport },
             { "Revolut", Category.ToDelete },
             { "Прогрес", Category.ToDelete },
             { "ЗАХРАНВАНЕ", Category.CommonAccount },
             { "Теглене на АТМ", Category.ToDelete },
+            { "H&M", Category.ClothesShoes },
+            { "VITOSHA BG777 SOFIYA", Category.ClothesShoes }
         };
 
         private Dictionary<string, string> commonMap = new Dictionary<string, string>()
@@ -47,7 +50,10 @@ namespace expenses_parser
             { "TOPLOFIKATSIA SOFIA", Category.ToploBG},
             { "KASHTATA NA DZHIKOV", Category.RestaurantBG},
             { "RESTAURANT TOZI ONZI", Category.RestaurantBG},
-            { "KITCHEN SI", Category.RestaurantBG}
+            { "KITCHEN SI", Category.RestaurantBG},
+            { "MEDEYA MLADOST", Category.ChildBG},
+            { "APTEKA SOFARMACY", Category.ChildBG},
+            { "APTEKA MIRABEL", Category.ChildBG}
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
@@ -57,7 +63,8 @@ namespace expenses_parser
             { "3dpos Etapgroup.com", Category.HolidayBG },
             { "ЙОРЯНА СПОРТ КОМПЪНИ ЕООД", Category.Sport },
             { "Telenor", Category.Phone },
-            { "Patreon", Category.Entertainment }
+            { "Patreon", Category.Entertainment },
+            { "Steamgames", Category.Entertainment }
         };
 
         public CategoryChooser(Type type)

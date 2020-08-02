@@ -11,6 +11,7 @@ namespace expenses_parser
         public readonly static string CommonAccount = "Common account";
         public readonly static string Phone = "Phone";
         public readonly static string Entertainment = "Entertainment";
+        public readonly static string ClothesShoes = "Clothes/Shoes";
         public readonly static string BankTaxBG = "Банкови такси";
         public readonly static string RentBG = "Наем";
         public readonly static string FoodBG = "Храна";
@@ -24,5 +25,6 @@ namespace expenses_parser
         public readonly static string ToploBG = "Топлофикация";
         public readonly static string RestaurantBG = "Ресторант";
         public readonly static string HolidayBG = "Почивка";
+        public readonly static string ChildBG = "Дете";
     }
 }
