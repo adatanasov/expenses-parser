@@ -57,7 +57,8 @@ namespace expenses_parser
             { "APTEKA MIRABEL", Category.ChildBG},
             { "DKTS VITA", Category.ChildBG},
             { "SOFARMASI", Category.ChildBG},
-            { "MDL CIBALAB", Category.ChildBG}
+            { "MDL CIBALAB", Category.ChildBG},
+            { "SOPHARMACY", Category.ChildBG}
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
