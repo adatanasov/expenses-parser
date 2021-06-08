@@ -26,5 +26,6 @@ namespace expenses_parser
         public readonly static string RestaurantBG = "Ресторант";
         public readonly static string HolidayBG = "Почивка";
         public readonly static string ChildBG = "Дете";
+        public readonly static string WaterBG = "Вода";
     }
 }

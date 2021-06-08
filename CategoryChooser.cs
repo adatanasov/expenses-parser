@@ -58,7 +58,12 @@ namespace expenses_parser
             { "DKTS VITA", Category.ChildBG},
             { "SOFARMASI", Category.ChildBG},
             { "MDL CIBALAB", Category.ChildBG},
-            { "SOPHARMACY", Category.ChildBG}
+            { "SOPHARMACY", Category.ChildBG},
+            { "HEPI DOSTAVKA", Category.RestaurantBG},
+            { "SOFIISKA VODA", Category.WaterBG},
+            { "RESTAURANT DOBREVSKI", Category.RestaurantBG},
+            { "PURLENKITE", Category.RestaurantBG},
+            { "NASLADA MLADOST", Category.FoodBG }
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
