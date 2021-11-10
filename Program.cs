@@ -28,6 +28,9 @@ namespace expenses_parser
                 case Type.SpendingTraker:
                     parser = new SpendingTrackerStatementParser(null);
                     break;
+                case Type.Paysera:
+                    parser = new PayseraStatementParser(categoryChooser);
+                    break;
                 default:
                     throw new ArgumentException("Unknown parse type.");
             }

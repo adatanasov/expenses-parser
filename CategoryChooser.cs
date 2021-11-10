@@ -66,6 +66,54 @@ namespace expenses_parser
             { "NASLADA MLADOST", Category.FoodBG }
         };
 
+        private Dictionary<string, string> payseraMap = new Dictionary<string, string>()
+        {
+            { "Такса", Category.BankTaxBG },
+            { "Т-са Плащ.", Category.BankTaxBG },
+            { "card fee", Category.BankTaxBG },
+            { "Анатолий", Category.RentBG },
+            { "LIDL", Category.FoodBG },
+            { "BILLA", Category.FoodBG },
+            { "FIDI-43", Category.FoodBG },
+            { "SHELL", Category.GasBG },
+            { "EKO BG", Category.GasBG },
+            { "PETROL AD", Category.GasBG },
+            { "LUKOIL", Category.GasBG },
+            { " OMV ", Category.GasBG },
+            { "LADA GROUP", Category.GasBG },
+            { "ZOO", Category.CatsBG },
+            { "ML.1 AKVADIZAYN", Category.CatsBG},
+            { "#DM ", Category.HomeItemsBG },
+            { "Dm 061", Category.HomeItemsBG },
+            { "NETFLIX", Category.NetflixBG },
+            { "Spotify", Category.SpotifyBG },
+            { "Revolut", Category.ToDelete },
+            { "Период.плащ.", Category.ToDelete },
+            { "Получен кредитен превод", Category.ToDelete},
+            { "FANTASTICO", Category.FoodBG },
+            { "KINO ARENA", Category.FoodBG },
+            { "SITI STANDART", Category.FacilityBG },
+            { "TOPLOFIKATSIA SOFIA", Category.ToploBG},
+            { "KASHTATA NA DZHIKOV", Category.RestaurantBG},
+            { "RESTAURANT TOZI ONZI", Category.RestaurantBG},
+            { "FABRIKA DAGA", Category.RestaurantBG},
+            { "KITCHEN SI", Category.RestaurantBG},
+            { "HEPINES EOOD", Category.RestaurantBG},
+            { "NEDELYA MLADOST", Category.RestaurantBG},
+            { "MEDEYA MLADOST", Category.ChildBG},
+            { "APTEKA SOFARMACY", Category.ChildBG},
+            { "APTEKA MIRABEL", Category.ChildBG},
+            { "DKTS VITA", Category.ChildBG},
+            { "SOFARMASI", Category.ChildBG},
+            { "MDL CIBALAB", Category.ChildBG},
+            { "SOPHARMACY", Category.ChildBG},
+            { "HEPI DOSTAVKA", Category.RestaurantBG},
+            { "SOFIISKA VODA", Category.WaterBG},
+            { "RESTAURANT DOBREVSKI", Category.RestaurantBG},
+            { "PURLENKITE", Category.RestaurantBG},
+            { "NASLADA MLADOST", Category.FoodBG }
+        };
+
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
         {
             { "Top-Up by *", Category.ToDelete },
@@ -105,7 +153,9 @@ namespace expenses_parser
                     return this.commonMap;
                 case Type.Revolut:
                     return this.revolutMap;
-                default: 
+                case Type.Paysera:
+                    return this.payseraMap;
+                default:
                     throw new ArgumentException("Invalid type for CategoryChooser.");
             }
         }

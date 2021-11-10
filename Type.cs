@@ -5,6 +5,7 @@ namespace expenses_parser
         Personal = 1,
         Common = 2,
         Revolut = 3,
-        SpendingTraker = 4
+        SpendingTraker = 4,
+        Paysera = 5
     }
 }
