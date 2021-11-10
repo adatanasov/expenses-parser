@@ -9,3 +9,6 @@ dotnet run -- 3 revolut.csv
 
 For Spending Tracker:
 dotnet run -- 4 Transactions.csv
+
+For Paysera:
+dotnet run -- 5 Paysera.csv
