@@ -122,7 +122,12 @@ namespace expenses_parser
             { "ЙОРЯНА СПОРТ КОМПЪНИ ЕООД", Category.Sport },
             { "Telenor", Category.Phone },
             { "Patreon", Category.Entertainment },
-            { "Steamgames", Category.Entertainment }
+            { "Steamgames", Category.Entertainment },
+            { "Google *services", Category.Entertainment },
+            { "Eddy's", Category.Food },
+            { "Restaurant", Category.Food },
+            { "Metro", Category.Transport },
+            { "Spotify", Category.CommonAccount }
         };
 
         public CategoryChooser(Type type)
