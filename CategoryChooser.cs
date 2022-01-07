@@ -91,6 +91,8 @@ namespace expenses_parser
             { "Период.плащ.", Category.ToDelete },
             { "Получен кредитен превод", Category.ToDelete},
             { "FANTASTICO", Category.FoodBG },
+            { "FANTASTIKO", Category.FoodBG },
+            { "Dar Mladost", Category.FoodBG },
             { "KINO ARENA", Category.FoodBG },
             { "SITI STANDART", Category.FacilityBG },
             { "TOPLOFIKATSIA SOFIA", Category.ToploBG},
@@ -100,6 +102,7 @@ namespace expenses_parser
             { "KITCHEN SI", Category.RestaurantBG},
             { "HEPINES EOOD", Category.RestaurantBG},
             { "NEDELYA MLADOST", Category.RestaurantBG},
+            { "DOMINOS.BG", Category.RestaurantBG},
             { "MEDEYA MLADOST", Category.ChildBG},
             { "APTEKA SOFARMACY", Category.ChildBG},
             { "APTEKA MIRABEL", Category.ChildBG},
@@ -107,11 +110,13 @@ namespace expenses_parser
             { "SOFARMASI", Category.ChildBG},
             { "MDL CIBALAB", Category.ChildBG},
             { "SOPHARMACY", Category.ChildBG},
+            { "FURISTO", Category.ChildBG},
             { "HEPI DOSTAVKA", Category.RestaurantBG},
             { "SOFIISKA VODA", Category.WaterBG},
             { "RESTAURANT DOBREVSKI", Category.RestaurantBG},
             { "PURLENKITE", Category.RestaurantBG},
-            { "NASLADA MLADOST", Category.FoodBG }
+            { "NASLADA MLADOST", Category.FoodBG },
+            { "Magazin Naslada", Category.FoodBG }
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
