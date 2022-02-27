@@ -116,7 +116,12 @@ namespace expenses_parser
             { "RESTAURANT DOBREVSKI", Category.RestaurantBG},
             { "PURLENKITE", Category.RestaurantBG},
             { "NASLADA MLADOST", Category.FoodBG },
-            { "Magazin Naslada", Category.FoodBG }
+            { "Magazin Naslada", Category.FoodBG },
+            { "GLOVOAPP", Category.RestaurantBG},
+            { "EVROPA-VN", Category.FoodBG },
+            { "Dm 103", Category.HomeItemsBG },
+            { "S PLYUS S-S", Category.FoodBG },
+            { "BAKALIN", Category.FoodBG },
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
