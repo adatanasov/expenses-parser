@@ -113,7 +113,7 @@ namespace expenses_parser
             { "FURISTO", Category.ChildBG},
             { "HEPI DOSTAVKA", Category.RestaurantBG},
             { "SOFIISKA VODA", Category.WaterBG},
-            { "RESTAURANT DOBREVSKI", Category.RestaurantBG},
+            { "DOBREVSKI", Category.RestaurantBG},
             { "PURLENKITE", Category.RestaurantBG},
             { "NASLADA MLADOST", Category.FoodBG },
             { "Magazin Naslada", Category.FoodBG },
@@ -122,6 +122,11 @@ namespace expenses_parser
             { "Dm 103", Category.HomeItemsBG },
             { "S PLYUS S-S", Category.FoodBG },
             { "BAKALIN", Category.FoodBG },
+            { "Dm 025", Category.HomeItemsBG },
+            { "LORENS 2010", Category.FoodBG },
+            { "Glovo", Category.RestaurantBG},
+            { "HIT HIPERMARKET", Category.FoodBG },
+            { "BOZMOV", Category.FoodBG },
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
