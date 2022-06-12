@@ -22,7 +22,8 @@ namespace expenses_parser
             { "ЗАХРАНВАНЕ", Category.CommonAccount },
             { "Теглене на АТМ", Category.ToDelete },
             { "H&M", Category.ClothesShoes },
-            { "VITOSHA BG777 SOFIYA", Category.ClothesShoes }
+            { "VITOSHA BG777 SOFIYA", Category.ClothesShoes },
+            { "Babino Selo", Category.Food },
         };
 
         private Dictionary<string, string> commonMap = new Dictionary<string, string>()
@@ -127,6 +128,7 @@ namespace expenses_parser
             { "Glovo", Category.RestaurantBG},
             { "HIT HIPERMARKET", Category.FoodBG },
             { "BOZMOV", Category.FoodBG },
+            { "Ciccione", Category.RestaurantBG }
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
