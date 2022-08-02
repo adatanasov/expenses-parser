@@ -7,6 +7,8 @@ namespace expenses_parser
         public readonly static string BankTax = "Bank Tax";
         public readonly static string Health = "Health";
         public readonly static string Sport = "Sport";
+        public readonly static string Savings = "Savings";
+        public readonly static string Taxi = "Taxi";
         public readonly static string Transport = "Transport";
         public readonly static string CommonAccount = "Common account";
         public readonly static string Phone = "Phone";

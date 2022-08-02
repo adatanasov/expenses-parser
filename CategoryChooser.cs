@@ -128,7 +128,8 @@ namespace expenses_parser
             { "Glovo", Category.RestaurantBG},
             { "HIT HIPERMARKET", Category.FoodBG },
             { "BOZMOV", Category.FoodBG },
-            { "Ciccione", Category.RestaurantBG }
+            { "Ciccione", Category.RestaurantBG },
+            { "REKORD 2004", Category.FoodBG }
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
@@ -142,9 +143,13 @@ namespace expenses_parser
             { "Steamgames", Category.Entertainment },
             { "Google *services", Category.Entertainment },
             { "Eddy's", Category.Food },
+            { "Eddys", Category.Food },
             { "Restaurant", Category.Food },
             { "Metro", Category.Transport },
-            { "Spotify", Category.CommonAccount }
+            { "Spotify", Category.CommonAccount },
+            { "TRANSFER Current To BGN Personal Vault", Category.Savings},
+            { "taxime", Category.Taxi},
+            { "Babino Selo", Category.Food}
         };
 
         public CategoryChooser(Type type)
