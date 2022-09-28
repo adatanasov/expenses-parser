@@ -149,7 +149,10 @@ namespace expenses_parser
             { "Spotify", Category.CommonAccount },
             { "TRANSFER Current To BGN Personal Vault", Category.Savings},
             { "taxime", Category.Taxi},
-            { "Babino Selo", Category.Food}
+            { "Babino Selo", Category.Food},
+            { "Sofia Transit Dsk Mobi", Category.Transport },
+            { "Breaktime Progres", Category.Food},
+            { "Ag And Co Ood", Category.Alcohol},
         };
 
         public CategoryChooser(Type type)
