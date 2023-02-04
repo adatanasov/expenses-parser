@@ -156,6 +156,7 @@ namespace expenses_parser
             { "taxime", Category.Taxi},
             { "Babino Selo", Category.Food},
             { "Sofia Transit Dsk Mobi", Category.Transport },
+            { "Citygate Sofia Transit", Category.Transport },
             { "Breaktime Progres", Category.Food},
             { "Ag And Co Ood", Category.Alcohol},
         };
