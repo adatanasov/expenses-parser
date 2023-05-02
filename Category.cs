@@ -14,6 +14,7 @@ namespace expenses_parser
         public readonly static string CommonAccount = "Common account";
         public readonly static string Phone = "Phone";
         public readonly static string Entertainment = "Entertainment";
+        public readonly static string EatingOut = "Eating Out";
         public readonly static string ClothesShoes = "Clothes/Shoes";
         public readonly static string BankTaxBG = "Банкови такси";
         public readonly static string RentBG = "Наем";

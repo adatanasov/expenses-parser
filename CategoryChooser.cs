@@ -147,10 +147,13 @@ namespace expenses_parser
             { "Patreon", Category.Entertainment },
             { "Steamgames", Category.Entertainment },
             { "Google *services", Category.Entertainment },
+            { "google Play Ap", Category.Entertainment},
+            { "Heroku", Category.Entertainment},
             { "Eddy's", Category.Food },
             { "Eddys", Category.Food },
             { "Restaurant", Category.Food },
             { "Metro", Category.Transport },
+            { "webportal.sofi", Category.Transport},
             { "Spotify", Category.CommonAccount },
             { "TRANSFER Current To BGN Personal Vault", Category.Savings},
             { "taxime", Category.Taxi},
@@ -159,6 +162,8 @@ namespace expenses_parser
             { "Citygate Sofia Transit", Category.Transport },
             { "Breaktime Progres", Category.Food},
             { "Ag And Co Ood", Category.Alcohol},
+            { "Cantina 22", Category.Food },
+            { "dominos.bg", Category.EatingOut },
         };
 
         public CategoryChooser(Type type)
