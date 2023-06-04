@@ -151,6 +151,7 @@ namespace expenses_parser
             { "Heroku", Category.Entertainment},
             { "Eddy's", Category.Food },
             { "Eddys", Category.Food },
+            { "breaktimejsc", Category.Food},
             { "Restaurant", Category.Food },
             { "Metro", Category.Transport },
             { "webportal.sofi", Category.Transport},
