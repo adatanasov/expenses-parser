@@ -151,7 +151,8 @@ namespace expenses_parser
             { "Heroku", Category.Entertainment},
             { "Eddy's", Category.Food },
             { "Eddys", Category.Food },
-            { "breaktimejsc", Category.Food},
+            { "breaktimejsc", Category.Food },
+            { "BreakTime", Category.Food },
             { "Restaurant", Category.Food },
             { "Metro", Category.Transport },
             { "webportal.sofi", Category.Transport},
@@ -161,10 +162,12 @@ namespace expenses_parser
             { "Babino Selo", Category.Food},
             { "Sofia Transit Dsk Mobi", Category.Transport },
             { "Citygate Sofia Transit", Category.Transport },
+            { "Sofia Transit", Category.Transport },
             { "Breaktime Progres", Category.Food},
             { "Ag And Co Ood", Category.Alcohol},
             { "Cantina 22", Category.Food },
             { "dominos.bg", Category.EatingOut },
+            { "Krisna Ood", Category.Food },
         };
 
         public CategoryChooser(Type type)
