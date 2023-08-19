@@ -134,7 +134,8 @@ namespace expenses_parser
             { "HIT HIPERMARKET", Category.FoodBG },
             { "BOZMOV", Category.FoodBG },
             { "Ciccione", Category.RestaurantBG },
-            { "REKORD 2004", Category.FoodBG }
+            { "REKORD 2004", Category.FoodBG },
+            { "JE T AIME", Category.RestaurantBG }
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()

@@ -30,7 +30,7 @@ namespace expenses_parser
                 {
                     bgAmount = $"-{bgAmount}";
                 }
-                string note = $"{this.RemoveQuotes(columns[4]).Trim()} {this.RemoveQuotes(columns[8]).Trim()}";
+                string note = $"{this.RemoveQuotes(columns[4])} {this.RemoveQuotes(columns[8])}";
                 string category = this.categoryChooser.GetCategory(note);
 
                 sb.AppendLine($"{date},{category},{bgAmount},\"{note}\",{euroAmount}");
@@ -41,10 +41,7 @@ namespace expenses_parser
 
         private string RemoveQuotes(string text)
         {
-            if (text.StartsWith("\"") && text.EndsWith("\""))
-            {
-                text = text.Substring(1, text.Length - 2);
-            }    
+            text = text.Trim(new char[] {' ', '"'});
 
             return text;        
         }
