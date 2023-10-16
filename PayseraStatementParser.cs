@@ -23,14 +23,14 @@ namespace expenses_parser
                 string[] columns = line.Split(";", StringSplitOptions.None);
                 
                 string date = columns[3];
-                string euroAmount = columns[6];
+                string euroAmount = columns[7];
                 bool isNegative = euroAmount.StartsWith("-");
-                string bgAmount = this.GetBGN(columns[8]);
+                string bgAmount = this.GetBGN(columns[9]);
                 if (isNegative && !string.IsNullOrEmpty(bgAmount))
                 {
                     bgAmount = $"-{bgAmount}";
                 }
-                string note = $"{this.RemoveQuotes(columns[4])} {this.RemoveQuotes(columns[8])}";
+                string note = $"{this.RemoveQuotes(columns[4])} {this.RemoveQuotes(columns[9])}";
                 string category = this.categoryChooser.GetCategory(note);
 
                 sb.AppendLine($"{date},{category},{bgAmount},\"{note}\",{euroAmount}");
