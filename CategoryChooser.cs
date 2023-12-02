@@ -106,6 +106,7 @@ namespace expenses_parser
             { "DOMINOS.BG", Category.RestaurantBG},
             { "EDDYS", Category.RestaurantBG},
             { "DOSTAVKA* ORDER", Category.RestaurantBG},
+            { "ALEGRA 84", Category.RestaurantBG},
             { "MEDEYA MLADOST", Category.ChildBG},
             { "APTEKA SOFARMACY", Category.ChildBG},
             { "APTEKA MIRABEL", Category.ChildBG},
