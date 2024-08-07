@@ -21,6 +21,7 @@ namespace expenses_parser
             for (int i = 1; i < lines.Length; i++)
             {
                 string line = lines[i];
+                line = Regex.Replace(line, "(\"[^\",]+),([^\"]+\")", "$1$2");
                 string[] columns = line.Split(",", StringSplitOptions.None);
 
                 double currentFee = double.Parse(columns[6].Trim());

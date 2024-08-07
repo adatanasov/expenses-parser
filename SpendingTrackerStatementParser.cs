@@ -20,6 +20,7 @@ namespace expenses_parser
             for (int i = 1; i < lines.Length; i++)
             {
                 string line = lines[i];
+                line = Regex.Replace(line, "(\"[^\",]+),([^\"]+\")", "$1$2");
                 string[] columns = line.Split(",", StringSplitOptions.None);
 
                 string date = columns[0].Replace("\"", string.Empty).Trim();

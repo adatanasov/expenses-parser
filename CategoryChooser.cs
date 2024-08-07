@@ -178,6 +178,12 @@ namespace expenses_parser
             { "Cantina 22", Category.Food },
             { "dominos.bg", Category.EatingOut },
             { "Krisna Ood", Category.Food },
+            { "H&M", Category.ClothesShoes },
+            { "Deli cafe", Category.Food },
+            { "Deli Coffee", Category.Food },
+            { "Sunset Cafe", Category.Food },
+            { "Beshay", Category.Food },
+            { "Liguria", Category.Food },
         };
 
         public CategoryChooser(Type type)
