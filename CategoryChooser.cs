@@ -24,6 +24,8 @@ namespace expenses_parser
             { "H&M", Category.ClothesShoes },
             { "VITOSHA BG777 SOFIYA", Category.ClothesShoes },
             { "Babino Selo", Category.Food },
+            { "Salary", Category.ToDelete },
+            { "Carry Over", Category.ToDelete },
         };
 
         private Dictionary<string, string> commonMap = new Dictionary<string, string>()
@@ -141,7 +143,11 @@ namespace expenses_parser
             { "BOZMOV", Category.FoodBG },
             { "Ciccione", Category.RestaurantBG },
             { "REKORD 2004", Category.FoodBG },
+            { "EBAG.BG", Category.FoodBG },
             { "JE T AIME", Category.RestaurantBG },
+            { "DELI KAFE", Category.RestaurantBG },
+            { "MERENG", Category.RestaurantBG },
+            { "PANINI GRUP", Category.RestaurantBG },
             { "PARK BOBY  and  KELLY", Category.ChildBG },
             { "OSK LOZENEZ EAD", Category.ChildBG },
             { "DM BULGARIA EOOD", Category.HomeItemsBG },
@@ -151,6 +157,8 @@ namespace expenses_parser
         {
             { "Top-Up by *", Category.ToDelete },
             { "Cash at ", Category.ToDelete },
+            { "EXCHANGE", Category.ToDelete },
+            { "ATM", Category.ToDelete },
             { "3dpos Etapgroup.com", Category.HolidayBG },
             { "ЙОРЯНА СПОРТ КОМПЪНИ ЕООД", Category.Sport },
             { "Telenor", Category.Phone },
@@ -174,6 +182,7 @@ namespace expenses_parser
             { "Citygate Sofia Transit", Category.Transport },
             { "Sofia Transit", Category.Transport },
             { "Breaktime Progres", Category.Food},
+            { "Fantastico", Category.Food},
             { "Ag And Co Ood", Category.Alcohol},
             { "Cantina 22", Category.Food },
             { "dominos.bg", Category.EatingOut },
@@ -184,6 +193,9 @@ namespace expenses_parser
             { "Sunset Cafe", Category.Food },
             { "Beshay", Category.Food },
             { "Liguria", Category.Food },
+            { "Epic Foods", Category.Food },
+            { "Jerusalem", Category.Food },
+            { "Mixtape5", Category.Alcohol },
         };
 
         public CategoryChooser(Type type)
@@ -214,6 +226,8 @@ namespace expenses_parser
                     return this.commonMap;
                 case Type.Revolut:
                     return this.revolutMap;
+                case Type.SpendingTraker:
+                    return this.personalMap;
                 case Type.Paysera:
                     return this.payseraMap;
                 default:
