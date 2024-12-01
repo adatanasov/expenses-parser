@@ -151,6 +151,7 @@ namespace expenses_parser
             { "PARK BOBY  and  KELLY", Category.ChildBG },
             { "OSK LOZENEZ EAD", Category.ChildBG },
             { "DM BULGARIA EOOD", Category.HomeItemsBG },
+            { "DZHELATO KLAUD", Category.RestaurantBG },
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
