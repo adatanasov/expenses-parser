@@ -152,6 +152,9 @@ namespace expenses_parser
             { "OSK LOZENEZ EAD", Category.ChildBG },
             { "DM BULGARIA EOOD", Category.HomeItemsBG },
             { "DZHELATO KLAUD", Category.RestaurantBG },
+            { "EXIT TERMINAL N1", Category.ChildBG },
+            { "HIPPOLAND", Category.ChildBG },
+            { "JUMBO", Category.ChildBG },
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
@@ -197,6 +200,7 @@ namespace expenses_parser
             { "Epic Foods", Category.Food },
             { "Jerusalem", Category.Food },
             { "Mixtape5", Category.Alcohol },
+            { "Amazon", Category.Books },
         };
 
         public CategoryChooser(Type type)

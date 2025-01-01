@@ -4,6 +4,7 @@ namespace expenses_parser
     {
         public readonly static string ToDelete = "---------------";
         public readonly static string Food = "Food";
+        public readonly static string Books = "Books";
         public readonly static string Alcohol = "Alcohol";
         public readonly static string BankTax = "Bank Tax";
         public readonly static string Health = "Health";
