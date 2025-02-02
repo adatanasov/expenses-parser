@@ -155,6 +155,8 @@ namespace expenses_parser
             { "EXIT TERMINAL N1", Category.ChildBG },
             { "HIPPOLAND", Category.ChildBG },
             { "JUMBO", Category.ChildBG },
+            { "HARITI SI", Category.RestaurantBG },
+            { "AMREST KOFI", Category.RestaurantBG },
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
