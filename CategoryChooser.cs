@@ -160,6 +160,7 @@ namespace expenses_parser
             { "BI FIT", Category.FoodBG },
             { "SUNSET COFFEE", Category.RestaurantBG },
             { "BE FIT", Category.FoodBG },
+            { "GELATO CLOUD", Category.RestaurantBG },
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
