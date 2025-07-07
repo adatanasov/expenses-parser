@@ -207,6 +207,7 @@ namespace expenses_parser
             { "Jerusalem", Category.Food },
             { "Mixtape5", Category.Alcohol },
             { "Amazon", Category.Books },
+            { "Ozone", Category.Books },
         };
 
         public CategoryChooser(Type type)
