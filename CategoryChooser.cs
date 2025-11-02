@@ -163,6 +163,10 @@ namespace expenses_parser
             { "GELATO CLOUD", Category.RestaurantBG },
             { "T-MARKET", Category.FoodBG },
             { "GARITAGE PARK", Category.ChildBG },
+            { "EXIT TERMINAL", Category.ChildBG },
+            { "PUZZLE", Category.ChildBG },
+            { "Storytel", Category.StorytelBG },
+            { "Spotify", Category.SpotifyBG }
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
