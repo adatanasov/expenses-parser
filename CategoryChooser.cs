@@ -165,8 +165,7 @@ namespace expenses_parser
             { "GARITAGE PARK", Category.ChildBG },
             { "EXIT TERMINAL", Category.ChildBG },
             { "PUZZLE", Category.ChildBG },
-            { "Storytel", Category.StorytelBG },
-            { "Spotify", Category.SpotifyBG }
+            { "Storytel", Category.StorytelBG }
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()

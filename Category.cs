@@ -33,6 +33,5 @@ namespace expenses_parser
         public readonly static string ChildBG = "Дете";
         public readonly static string WaterBG = "Вода";
         public readonly static string StorytelBG = "Сторител";
-        public readonly static string SpotifyBG = "Спотифай";
     }
 }
