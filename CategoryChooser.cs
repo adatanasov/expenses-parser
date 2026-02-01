@@ -165,7 +165,8 @@ namespace expenses_parser
             { "GARITAGE PARK", Category.ChildBG },
             { "EXIT TERMINAL", Category.ChildBG },
             { "PUZZLE", Category.ChildBG },
-            { "Storytel", Category.StorytelBG }
+            { "Storytel", Category.StorytelBG },
+            { "KASA 1", Category.ChildBG },
         };
 
         private Dictionary<string, string> revolutMap = new Dictionary<string, string>()
@@ -213,6 +214,8 @@ namespace expenses_parser
             { "Mixtape5", Category.Alcohol },
             { "Amazon", Category.Books },
             { "Ozone", Category.Books },
+            { "Beshamel", Category.Food },
+            { "Vending Food", Category.Food },
         };
 
         public CategoryChooser(Type type)
