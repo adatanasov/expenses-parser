@@ -15,7 +15,7 @@ namespace expenses_parser
 
         public string ParseText(string[] lines)
         {
-            StringBuilder sb = new StringBuilder("Date,Category,BGN,Note,EUR");
+            StringBuilder sb = new StringBuilder("Date,Category,EUR,Note");
             sb.AppendLine();
             for (int i = 1; i < lines.Length; i++)
             {
@@ -24,16 +24,10 @@ namespace expenses_parser
                 
                 string date = columns[3];
                 string euroAmount = columns[7];
-                bool isNegative = euroAmount.StartsWith("-");
-                string bgAmount = this.GetBGN(columns[9]);
-                if (isNegative && !string.IsNullOrEmpty(bgAmount))
-                {
-                    bgAmount = $"-{bgAmount}";
-                }
                 string note = $"{this.RemoveQuotes(columns[4])} {this.RemoveQuotes(columns[9])}";
                 string category = this.categoryChooser.GetCategory(note);
 
-                sb.AppendLine($"{date},{category},{bgAmount},\"{note}\",{euroAmount}");
+                sb.AppendLine($"{date},{category},{euroAmount},\"{note}\"");
             }
 
             return sb.ToString();
@@ -44,22 +38,6 @@ namespace expenses_parser
             text = text.Trim(new char[] {' ', '"'});
 
             return text;        
-        }
-
-        private string GetBGN(string text)
-        {
-            string result = string.Empty;
-
-            if (text.Contains("BGN ") && text.Contains(" FX Rate"))
-            {
-                int bgnIndex = text.IndexOf("BGN ") + 4;
-                int fxRate = text.IndexOf(" FX Rate");
-                int length = fxRate - bgnIndex;
-
-                result = text.Substring(bgnIndex, length);
-            }
-
-            return result;
         }
     }
 }

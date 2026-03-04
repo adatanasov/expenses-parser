@@ -216,6 +216,7 @@ namespace expenses_parser
             { "Ozone", Category.Books },
             { "Beshamel", Category.Food },
             { "Vending Food", Category.Food },
+            { "Mereng", Category.Food },
         };
 
         public CategoryChooser(Type type)
